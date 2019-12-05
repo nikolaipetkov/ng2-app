@@ -11,6 +11,8 @@ phases:
     commands:
       - echo Starting build process with stage $BUILD_ENV
       - ng build
+      - ng test
+      - ng e2e
   post_build:
     commands:
       - echo Build real2 completed on `date`
